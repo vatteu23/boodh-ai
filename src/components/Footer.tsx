@@ -1,4 +1,4 @@
-import { cn } from '@/functions/cn';
+import { cn } from '@/src/functions/cn';
 import React from 'react';
 import Container from './Container';
 import Button from './Button';

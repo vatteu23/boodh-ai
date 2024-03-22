@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-import Layout from "@/components/Layout";
-import Typography from "@/components/Typography";
-import Container from "@/components/Container";
-import Button from "@/components/Button";
-import Card, { CardProps } from "@/components/Card";
-import HeadWithMetas from "@/components/HeadWithMetas";
+import Layout from "@/src/components/Layout";
+import Typography from "@/src/components/Typography";
+import Container from "@/src/components/Container";
+import Button from "@/src/components/Button";
+import Card, { CardProps } from "@/src/components/Card";
+import HeadWithMetas from "@/src/components/HeadWithMetas";
 
 
 const features: CardProps[] = [

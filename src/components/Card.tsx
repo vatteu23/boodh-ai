@@ -1,4 +1,4 @@
-import { cn } from "@/functions/cn";
+import { cn } from "@/src/functions/cn";
 import Typography from "./Typography";
 import Button from "./Button";
 

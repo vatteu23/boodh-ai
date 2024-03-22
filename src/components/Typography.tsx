@@ -1,5 +1,5 @@
 
-import { cn } from '@/functions/cn';
+import { cn } from '@/src/functions/cn';
 import React, { ReactNode } from 'react';
 
 interface TypographyProps {

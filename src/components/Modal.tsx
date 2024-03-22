@@ -1,4 +1,4 @@
-import { cn } from "@/functions/cn";
+import { cn } from "@/src/functions/cn";
 
 type ModalProps = {
     isOpen: boolean;

@@ -1,4 +1,4 @@
-import { cn } from '@/functions/cn';
+import { cn } from '@/src/functions/cn';
 import Link from 'next/link';
 import React, { ReactNode } from 'react';
 

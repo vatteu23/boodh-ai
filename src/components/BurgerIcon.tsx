@@ -9,7 +9,7 @@ type Props = {
 
 const BurgerIcon:FC<Props> = ({ onClick, className, darkMode }) => {
     return (
-        <Wrapper onClick={onClick} className={className}>
+        <Wrapper onClick={onClick} className={className+' dark-mode'}>
             <div id='one' />
             <div id='two' />
             <div id='three' />

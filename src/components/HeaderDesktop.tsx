@@ -75,11 +75,11 @@ export const headerItems: HeaderMenuType[] = [
 const HeaderDesktop: React.FC<DesktopNavProps> = (props: DesktopNavProps) => {
 
   return (<header
-    className={`sticky top-0 z-50 bg-white/75 backdrop-blur-3xl transition-all duration-300 ease-in`}
+    className={`sticky top-0 z-50 bg-zinc-900 transition-all duration-300 ease-in`}
   >
     <Container className=" flex space-between mx-auto p-3 ">
       <span className="2xl:grow 2xl:flex-1 flex items-center">
-        <a href="/" className="">
+        <a href="/" className="text-white">
           BOODH AI
         </a>
       </span>
@@ -92,7 +92,7 @@ const HeaderDesktop: React.FC<DesktopNavProps> = (props: DesktopNavProps) => {
             >
               <button
                 className={`
-                  group-hover:opacity-70 text-sm font-normal text-black tracking-widest
+                  group-hover:opacity-70 text-sm font-normal text-white tracking-widest
                   `}
                 aria-haspopup="true"
               >
@@ -127,6 +127,7 @@ const HeaderDesktop: React.FC<DesktopNavProps> = (props: DesktopNavProps) => {
           href="/contact/"
          
             size="sm"
+            color="light"
           className="log-in hidden xl:block"
         >
          Get in touch

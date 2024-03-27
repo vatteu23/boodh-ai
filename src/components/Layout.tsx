@@ -2,7 +2,7 @@ import { cn } from '@/src/functions/cn';
 import React, { ReactNode } from 'react';
 import Header from './Header';
 
-import { IBM_Plex_Sans} from "next/font/google";
+import { Open_Sans } from "next/font/google";
 interface ContainerProps {
   children: ReactNode;
   className?: string;
@@ -10,8 +10,8 @@ interface ContainerProps {
   lightText?: boolean;
 }
 
-const roboto = IBM_Plex_Sans({
-  weight: ['100','200','300','400','500','600','700'],
+const roboto = Open_Sans({
+  weight: ['300','400','500','600','700'],
   subsets: ['latin']
 });
 

@@ -18,7 +18,7 @@ const BIcon: FC<BurgerIconProps> = ({ isOpen, setIsOpen, darkMode }) => {
     <BurgerIcon
       className={isOpen ? "-open" : ""}
       onClick={() => setIsOpen(!isOpen)}
-      darkMode={darkMode}
+      darkMode={true}
     />
   );
 };
@@ -50,10 +50,10 @@ const HeaderMobile: FC<Props> = ({}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Outer className={`transition-all duration-300 ease-in py-6`}>
+    <Outer className={`transition-all duration-300 ease-in py-6 !bg-zinc-900`}>
     
       <Wrapper>
-        <a href="/">
+        <a href="/" className="text-white">
             Boodh AI
         </a>
         <BIcon
@@ -63,7 +63,7 @@ const HeaderMobile: FC<Props> = ({}) => {
       </Wrapper>
 
       {/* <Modal open={isOpen}> */}
-      {isOpen && <div>
+      {isOpen && <div className="mt-4"> 
         <MenuWrapper>
           <Body>{_renderItems(setIsOpen)}
           <div className="flex flex-row gap-x-6 mt-6">

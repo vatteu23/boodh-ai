@@ -1,37 +1,37 @@
-import { cn } from '@/src/functions/cn';
-import React from 'react';
-import Container from './Container';
-import Button from './Button';
-import Typography from './Typography';
+import { FC, useState, useEffect } from "react";
+import HeaderMobile from "./HeaderMobile";
+import HeaderDesktop from "./HeaderDesktop";
 
-
-interface ContainerProps {
-  className?: string;
-  bgColor?: string;
-  lightText?: boolean;
+type HeaderProps = {
+ bgColor?:string;
+ bannerSection?:any;
+ darkTextHeader?:boolean;
 }
 
-const Header: React.FC<ContainerProps> = ({ className, bgColor, lightText }) => {
-  return (
-    <div className={cn('sticky top-0 bg-center bg-zinc-100 z-50', className)} >
-      <Container className='py-2 flex flex-row justify-between'>
+const Header: FC<HeaderProps> = ({bgColor,darkTextHeader}) => {
+  let [width, setWidth] = useState(400);
 
-        <Button href='/' className='!pl-0' color='light'>BOODH AI</Button>
-        <div className='flex gap-x-2 md:gap-x-4'>
-          <div className='py-3 cursor-pointer group'>
-            <Typography variant='p' className='group-hover:text-zinc-600'>COMPANY</Typography>
-          </div>
-          <div className='py-3 cursor-pointer group'>
-            <Typography variant='p' className='group-hover:text-zinc-600'>SERVICES</Typography>
-          </div>
-         </div>
-        <div className='flex gap-x-2 md:gap-x-4'>
-          <Button size='sm' color='dark' href='/contact' >
-            Get in touch
-          </Button>
-        </div>
-      </Container>
-    </div>
+  useEffect(() => {
+    const getWidth = () =>
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
+    setWidth(getWidth());
+    const resizeListener = () => {
+      setWidth(getWidth());
+    };
+    
+    window.addEventListener("resize", resizeListener);
+    return () => {
+      window.removeEventListener("resize", resizeListener);
+    };
+  }, []);
+
+
+  return width < 1024 ? (
+    <HeaderMobile />
+  ) : (
+    <HeaderDesktop />
   );
 };
 

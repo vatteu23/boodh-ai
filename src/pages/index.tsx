@@ -47,8 +47,8 @@ export default function Home() {
             <Typography variant="h1" wrapper="h3" className="!leading-tighter mb-4 text-center md:text-left">The future of AI is here</Typography>
             <Typography variant="p" className="text-center md:text-left">We are a team of AI experts who are passionate about making AI accessible to everyone.</Typography>
             <div className="flex justify-center md:justify-start gap-x-4 mt-8">
-              <Button>Get Started</Button>
-              <Button variant="outlined">Contact us</Button>
+              <Button>GET STARTED</Button>
+              <Button variant="outlined">CONTACT US</Button>
             </div>
           </div>
           <div className="col-span-12  md:col-span-6">

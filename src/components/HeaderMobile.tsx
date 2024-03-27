@@ -50,7 +50,7 @@ const HeaderMobile: FC<Props> = ({}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Outer className={`transition-all duration-300 ease-in py-3`}>
+    <Outer className={`transition-all duration-300 ease-in py-6`}>
     
       <Wrapper>
         <a href="/">

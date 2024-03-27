@@ -6,6 +6,7 @@ import Container from "@/src/components/Container";
 import Button from "@/src/components/Button";
 import Card, { CardProps } from "@/src/components/Card";
 import HeadWithMetas from "@/src/components/HeadWithMetas";
+import LogosSection from "../components/LogosSection";
 
 
 const features: CardProps[] = [
@@ -81,6 +82,8 @@ export default function Home() {
           })}
         </div>
       </Container>
+
+      <LogosSection />
     </Layout>
   );
 }
